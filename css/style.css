@@ -1,0 +1,23 @@
+h1 {
+    color: aquamarines;
+    font-size: 85px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+p {
+    text-decoration-line: underline;
+
+}
+
+.color-green {
+    color: #00ff00
+}
+
+#datos_personales {
+    font-family: 'Dancing Script', cursive;
+}
+#datos_personales:hover{
+    cursor:pointer;
+}

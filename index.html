@@ -8,29 +8,8 @@
     <title>Daaaaaat</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
 
-    <style>
-        h1 {
-            color: aquamarines;
-            font-size: 85px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
-        }
-
-        p {
-            text-decoration-line: underline;
-
-        }
-
-        .color-green {
-            color: #00ff00
-        }
-
-        #datos_personales {
-            font-family: 'Dancing Script', cursive;
-        }
-    </style>
 </head>
 
 <body>
@@ -40,7 +19,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur nemo alias atque, ipsum accusamus
         assumenda itaque nihil numquam nisi a temporibus possimus, est ex rerum, quas ad architecto in.</p>
     <h2 id="datos_personales" class="color-green">Datos personales</h2>
-    <p class="color-green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora amet in pariatur officia.
+    <p id="datos_parrafo" class="color-green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora amet in pariatur officia.
         Eius, reiciendis amet? Perferendis, totam non? Dolores obcaecati qui nostrum accusantium cumque sapiente iusto
         laborum explicabo illum?</p>
     <h2 id="preparacion_academica" class="color-green">Preparación academica</h2>
@@ -50,5 +29,15 @@
 
 
 </body>
+<script>
+        document.getElementById("datos_personales").addEventListener("click", function(){
+            var rojo = (Math.floor(Math.random() * 255)).toString(16);
+            var verde =( Math.floor(Math.random() * 255)).toString(16);
+            var azul =( Math.floor(Math.random() * 255)).toString(16);
+            document.getElementById("datos_personales").style.color="#"+rojo+verde+azul
+            document.getElementById("datos_parrafo").style.color="#"+rojo+verde+azul
+        
+        })
 
+</script>
 </html>
